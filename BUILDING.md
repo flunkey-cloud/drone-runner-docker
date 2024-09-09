@@ -5,10 +5,9 @@
 
 3. Build binaries
 
-    sh scripts/build_all.sh
+    sh scripts/build.sh
 
 4. Build images
 
     docker build -t drone/drone-runner-docker:latest-linux-amd64 -f docker/Dockerfile.linux.amd64 .
     docker build -t drone/drone-runner-docker:latest-linux-arm64 -f docker/Dockerfile.linux.arm64 .
-    docker build -t drone/drone-runner-docker:latest-linux-arm   -f docker/Dockerfile.linux.arm   .
